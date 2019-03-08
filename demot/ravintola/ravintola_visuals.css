@@ -1,0 +1,35 @@
+header { grid-area: header; }
+nav { grid-area: nav; }
+section { grid-area: section; }
+article { grid-area: article; }
+aside { grid-area: aside; }
+footer { grid-area: footer; }
+
+body {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'aside nav nav nav nav nav'
+    'aside article article article section section'
+    'aside footer footer footer footer footer';
+  grid-gap: 10px;
+  background-image: url("background.jpg");
+  background-color: #cccccc; 
+  padding: 10px;
+}
+
+header, nav, section, article, aside {
+  color:rgb(34, 8, 8);
+  font-family:"Over the Rainbow";
+  padding: 20px;
+}
+
+footer {
+  font-family: "Questrial";
+  padding:20px;
+  color:rgb(34, 8, 8);
+}
+
+a {
+  color:black;
+}
